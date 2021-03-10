@@ -2,10 +2,11 @@ package pl.training.shop.payments;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
+import org.springframework.stereotype.Component;
 
 import java.time.Instant;
 
-
+@Component
 @RequiredArgsConstructor
 public class FakePaymentService implements PaymentService {
 
@@ -14,7 +15,7 @@ public class FakePaymentService implements PaymentService {
 
     @Override
     public Payment process(PaymentRequest paymentRequest) {
-        return Payment.builder()                                                        // do vara mozna dawac obiekty, o to nie tylko typy prymitywne, var to taki niby Object!!!
+        return Payment.builder()                        // do vara mozna dawac obiekty, o to nie tylko typy prymitywne, var to taki niby Object!!!
                 .id(paymentIdGenerator.getNext())
                 .money(paymentRequest.getMoney())
                 .timestamp(Instant.now())

@@ -1,9 +1,9 @@
 package pl.training.shop.payments;
-
 import lombok.Setter;
+import org.springframework.stereotype.Component;
 
-import java.util.Locale;
 
+//@Component// zmienilem na generetaor z klsy mojej UUIDGenerator poprzez poprostu zakomentowanie tu @Component i dodanie tam jej
 public class IncrementalPaymentIdGenerator implements PaymentIdGenerator {
 
 
