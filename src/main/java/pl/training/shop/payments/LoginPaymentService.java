@@ -12,7 +12,7 @@ public class LoginPaymentService implements PaymentService {
     private final FakePaymentService paymentService;
 
 
-    @CreatedAnnotation
+
     @Override
     public Payment process(PaymentRequest paymentRequest) {
         var payment = paymentService.process(paymentRequest);
