@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.Instant;
 
-//@Component
+@Component
 @RequiredArgsConstructor
 public class FakePaymentService implements PaymentService {
 

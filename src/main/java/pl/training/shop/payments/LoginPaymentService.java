@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 @Log
 @RequiredArgsConstructor
 public class LoginPaymentService implements PaymentService {
