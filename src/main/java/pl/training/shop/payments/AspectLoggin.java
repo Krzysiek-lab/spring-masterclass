@@ -18,7 +18,7 @@ public class AspectLoggin {
     }
 
 
-    @AfterReturning(value = "@annotation(CreateAnnotation)",returning = "payment")
+    @AfterReturning(value = "@annotation(CreatedAnnotation)",returning = "payment")
     public void logging(Payment payment){
         log.info(createLogEntry(payment));
     }
